@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://undefined/undefined/compare/v1.2.0...v1.3.0)
+
+### 🚀 Enhancements
+
+- Allow users to be a string (4b8c34a)
+
+### 🩹 Fixes
+
+- Remove console log statement (9f796dc)
+
+### ❤️  Contributors
+
+- Kurt Gierke ([@kgierke](http://github.com/kgierke))
+
 ## v1.2.0
 
 [compare changes](https://undefined/undefined/compare/v1.1.0...v1.2.0)
