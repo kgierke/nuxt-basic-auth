@@ -1,7 +1,6 @@
 import { useRuntimeConfig } from "#imports";
 import { defineEventHandler } from "h3";
 import type { ModuleRuntimeConfig } from "../../../module";
-import { minimatch } from "minimatch";
 
 export default defineEventHandler((event) => {
   console.log(process.env);
@@ -13,9 +12,11 @@ export default defineEventHandler((event) => {
   if (
     !config.enabled ||
     !config.users?.length ||
-    config.allowedRoutes?.some((route) =>
-      minimatch(event.node.req.url || "", route)
-    )
+    config.allowedRoutes?.some((route) => {
+      const regex = new RegExp(route);
+
+      return regex.test(event.node.req?.url || "");
+    })
   ) {
     return;
   }
