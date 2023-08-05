@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.0
+
+[compare changes](https://undefined/undefined/compare/v1.1.0...v1.2.0)
+
+### 🚀 Enhancements
+
+- Replace glob pattern with regex (2f94a1c)
+
+### ❤️  Contributors
+
+- Kurt Gierke ([@kgierke](http://github.com/kgierke))
+
 ## v1.1.0
 
 
