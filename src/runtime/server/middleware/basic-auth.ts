@@ -3,7 +3,6 @@ import { defineEventHandler } from "h3";
 import type { ModuleRuntimeConfig } from "../../../module";
 
 export default defineEventHandler((event) => {
-  console.log(process.env);
   const config = useRuntimeConfig().basicAuth as ModuleRuntimeConfig;
 
   /**
