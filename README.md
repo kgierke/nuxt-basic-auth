@@ -17,7 +17,7 @@ Nuxt 3 Module for Basic Authentication.
 
 - ✅ Simple to use
 - ✅ Supports multiple users
-- ✅ Blacklist/Whitelist routes
+- ✅ Whitelist routes
 
 ## Quick Setup
 
@@ -49,20 +49,28 @@ export default defineNuxtConfig({
   modules: ["@kgierke/nuxt-basic-auth"],
 
   basicAuth: {
+    enabled: true,
     users: [
       {
         username: "admin",
         password: "admin",
       },
     ],
-    // Optional: Blacklist/Whitelist routes
-    // blacklist: ["/api/**"],
-    // whitelist: ["/api/auth/**"],
+    // Optional: Whitelist routes
+    // allowedRoutes: ["/api/**"],
   },
 });
 ```
 
 That's it! You can now use Basic Auth in your Nuxt app ✨
+
+## Options
+
+| Option          | Type       | Default | Description                                                                   |
+| --------------- | ---------- | ------- | ----------------------------------------------------------------------------- |
+| `enabled`       | `boolean`  | `true`  | Enables or disables Basic Auth.                                               |
+| `users`         | `object`   | `[]`    | Array of users. Each user must have a `username` and `password` property.     |
+| `allowedRoutes` | `string[]` | `[]`    | Array of routes that are not protected by Basic Auth. Supports glob patterns. |
 
 ## Development
 
