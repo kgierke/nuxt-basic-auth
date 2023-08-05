@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
+  "name": "@kgierke/nuxt-basic-auth",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "description": "Nuxt 3 Module for Basic Authentication",
+  "repository": "your-org/@kgierke/nuxt-basic-auth",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -28,15 +28,16 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.6.5"
+    "@nuxt/kit": "^3.6.5",
+    "minimatch": "^9.0.3"
   },
   "devDependencies": {
-    "@types/node": "^18.17.1",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.4.0",
     "@nuxt/schema": "^3.6.5",
     "@nuxt/test-utils": "^3.6.5",
+    "@types/node": "^18.17.1",
     "changelogen": "^0.5.4",
     "eslint": "^8.46.0",
     "nuxt": "^3.6.5",

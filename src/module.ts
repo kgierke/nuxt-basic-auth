@@ -1,19 +1,49 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addServerHandler } from "@nuxt/kit";
+import defu from "defu";
 
 // Module options TypeScript interface definition
-export interface ModuleOptions {}
+export interface ModuleOptions {
+  enabled?: boolean;
+  users?: {
+    username: string;
+    password: string;
+  }[];
+  allowedRoutes?: string[];
+}
+
+// Runtime config TypeScript interface definition
+export type ModuleRuntimeConfig = ModuleOptions;
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule'
+    name: "@kgierke/nuxt-basic-auth",
+    configKey: "basicAuth",
   },
   // Default configuration options of the Nuxt module
-  defaults: {},
-  setup (options, nuxt) {
-    const resolver = createResolver(import.meta.url)
+  defaults: {
+    enabled: true,
+    users: [{ username: "admin", password: "admin" }],
+    allowedRoutes: [],
+  },
+  setup(options, nuxt) {
+    const { resolve } = createResolver(import.meta.url);
 
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve('./runtime/plugin'))
-  }
-})
+    /**
+     * Add runtime config to the Nuxt instance
+     */
+    nuxt.options.runtimeConfig.basicAuth = defu(
+      nuxt.options.runtimeConfig.basicAuth || {},
+      options
+    );
+
+    /**
+     * Add the server middleware to the Nuxt instance
+     */
+    if (options.enabled) {
+      addServerHandler({
+        middleware: true,
+        handler: resolve("./runtime/server/middleware/basic-auth"),
+      });
+    }
+  },
+});
