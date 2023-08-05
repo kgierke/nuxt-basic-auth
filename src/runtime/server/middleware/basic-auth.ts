@@ -4,6 +4,7 @@ import type { ModuleRuntimeConfig } from "../../../module";
 import { minimatch } from "minimatch";
 
 export default defineEventHandler((event) => {
+  console.log(process.env);
   const config = useRuntimeConfig().basicAuth as ModuleRuntimeConfig;
 
   /**
