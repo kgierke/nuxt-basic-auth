@@ -4,10 +4,12 @@ import { defu } from "defu";
 // Module options TypeScript interface definition
 export interface ModuleOptions {
   enabled?: boolean;
-  users?: {
-    username: string;
-    password: string;
-  }[];
+  users?:
+    | {
+        username: string;
+        password: string;
+      }[]
+    | string;
   allowedRoutes?: string[];
 }
 
