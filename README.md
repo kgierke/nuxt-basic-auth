@@ -66,11 +66,11 @@ That's it! You can now use Basic Auth in your Nuxt app ✨
 
 ## Options
 
-| Option          | Type       | Default | Description                                                                                                                                                |
-| --------------- | ---------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `enabled`       | `boolean`  | `true`  | Enables or disables Basic Auth.                                                                                                                            |
-| `users`         | `array`    | `[]`    | Array of users. Each user must have a `username` and `password` property. Can also be formatted as string `<username>:<password>, <username2>:<password2>` |
-| `allowedRoutes` | `string[]` | `[]`    | Array of routes that are not protected by Basic Auth. Supports regex patterns.                                                                             |
+| Option          | Type       | Default | Description                                                                                                                                               |
+| --------------- | ---------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `enabled`       | `boolean`  | `true`  | Enables or disables Basic Auth.                                                                                                                           |
+| `users`         | `array`    | `[]`    | Array of users. Each user must have a `username` and `password` property. Can also be formatted as string `<username>:<password>,<username2>:<password2>` |
+| `allowedRoutes` | `string[]` | `[]`    | Array of routes that are not protected by Basic Auth. Supports regex patterns.                                                                            |
 
 ## Development
 

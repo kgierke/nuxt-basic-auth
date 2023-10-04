@@ -24,7 +24,7 @@ export default defineNuxtModule<ModuleOptions>({
   // Default configuration options of the Nuxt module
   defaults: {
     enabled: true,
-    users: [{ username: "admin", password: "admin" }],
+    users: [],
     allowedRoutes: [],
   },
   setup(options, nuxt) {
