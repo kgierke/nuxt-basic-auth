@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.3.1
+
+[compare changes](https://undefined/undefined/compare/v1.3.0...v1.3.1)
+
+### 🩹 Fixes
+
+- Remove default admin credentials (e253930)
+
+### 🏡 Chore
+
+- Add license (1097524)
+
+### ❤️  Contributors
+
+- Kurt Gierke ([@kgierke](http://github.com/kgierke))
+
 ## v1.3.0
 
 [compare changes](https://undefined/undefined/compare/v1.2.0...v1.3.0)
