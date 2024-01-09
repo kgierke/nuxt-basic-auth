@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://undefined/undefined/compare/v1.3.1...v1.4.0)
+
+### 🚀 Enhancements
+
+- Disable basic auth in prerender context (aeb0a8c)
+
+### 🏡 Chore
+
+- Test bundler module resolution (24b5e6c)
+- Update dependencies (f507093)
+- Update prepack command (e0ad8aa)
+
+### ❤️ Contributors
+
+- Kurt Gierke ([@kgierke](http://github.com/kgierke))
+- Daniel Roe <daniel@roe.dev>
+
 ## v1.3.1
 
 [compare changes](https://undefined/undefined/compare/v1.3.0...v1.3.1)
