@@ -6,6 +6,16 @@ export default defineEventHandler((event) => {
   const config = useRuntimeConfig().basicAuth as ModuleRuntimeConfig;
 
   /**
+   * If the request is a prerender request, do nothing.
+   */
+  if (
+    event.node.req.headers?.["x-nitro-prerender"] &&
+    import.meta.env.NODE_ENV === "prerender"
+  ) {
+    return;
+  }
+
+  /**
    * If the module is not enabled, or no users are defined, or the current route is allowed, do nothing.
    */
   if (
