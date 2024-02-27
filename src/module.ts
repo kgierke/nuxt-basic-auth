@@ -3,7 +3,7 @@ import { defu } from "defu";
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
-  enabled?: boolean;
+  enabled?: boolean | string;
   users?:
     | {
         username: string;

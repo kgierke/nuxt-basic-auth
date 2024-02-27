@@ -20,6 +20,7 @@ export default defineEventHandler((event) => {
    */
   if (
     !config.enabled ||
+    (typeof config.enabled === "string" && config.enabled !== "true") ||
     !config.users?.length ||
     config.allowedRoutes?.some((route) => {
       const regex = new RegExp(route);
