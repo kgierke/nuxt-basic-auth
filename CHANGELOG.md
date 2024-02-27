@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.5.0
+
+[compare changes](https://undefined/undefined/compare/v1.4.0...v1.5.0)
+
+### 🚀 Enhancements
+
+- Accept a string "true" for the enabled option (3428eb2)
+
+### 🏡 Chore
+
+- Update dependencies (e5a4311)
+
+### ❤️ Contributors
+
+- Kurt Gierke ([@kgierke](http://github.com/kgierke))
+
 ## v1.4.0
 
 [compare changes](https://undefined/undefined/compare/v1.3.1...v1.4.0)
