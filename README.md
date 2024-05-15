@@ -24,14 +24,7 @@ Nuxt 3 Module for Basic Authentication.
 1. Add `@kgierke/nuxt-basic-auth` dependency to your project
 
 ```bash
-# Using pnpm
-pnpm add -D @kgierke/nuxt-basic-auth
-
-# Using yarn
-yarn add --dev @kgierke/nuxt-basic-auth
-
-# Using npm
-npm install --save-dev @kgierke/nuxt-basic-auth
+npx nuxi@latest module add nuxt-basic-auth
 ```
 
 2. Add `@kgierke/nuxt-basic-auth` to the `modules` section of `nuxt.config.ts`
