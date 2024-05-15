@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.6.0
+
+[compare changes](https://undefined/undefined/compare/v1.5.0...v1.6.0)
+
+### 🚀 Enhancements
+
+- Add customizable delimiter for users string (02d4b4f)
+
+### 🩹 Fixes
+
+- Use utf-8 encoding to allow special characters in credentials (7d778cf)
+
+### ❤️ Contributors
+
+- Kurt Gierke ([@kgierke](http://github.com/kgierke))
+
 ## v1.5.0
 
 [compare changes](https://undefined/undefined/compare/v1.4.0...v1.5.0)
