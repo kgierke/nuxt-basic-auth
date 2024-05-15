@@ -43,7 +43,7 @@ export default defineEventHandler((event) => {
    */
   if (credentials) {
     const [username, password] = Buffer.from(credentials, "base64")
-      .toString("ascii")
+      .toString("utf8")
       .split(":");
 
     const users = Array.isArray(config.users)
@@ -62,7 +62,10 @@ export default defineEventHandler((event) => {
    * If the user is not authenticated or the credentials are not defined, send a 401 response.
    */
   if (!authenticated) {
-    event.node.res.setHeader("WWW-Authenticate", 'Basic realm="Secure Area"');
+    event.node.res.setHeader(
+      "WWW-Authenticate",
+      'Basic realm="Secure Area", charset="UTF-8"'
+    );
     event.node.res.statusCode = 401;
     event.node.res.end("Access denied");
   }
