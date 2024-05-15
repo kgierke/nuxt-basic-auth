@@ -10,6 +10,7 @@ export interface ModuleOptions {
         password: string;
       }[]
     | string;
+  usersDelimiter?: string;
   allowedRoutes?: string[];
 }
 
@@ -25,6 +26,7 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     enabled: true,
     users: [],
+    usersDelimiter: ",",
     allowedRoutes: [],
   },
   setup(options, nuxt) {

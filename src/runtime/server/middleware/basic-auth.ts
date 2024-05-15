@@ -48,7 +48,7 @@ export default defineEventHandler((event) => {
 
     const users = Array.isArray(config.users)
       ? config.users
-      : config.users.split(",").map((user) => {
+      : config.users.split(config.usersDelimiter ?? ",").map((user) => {
           const [username, password] = user.split(":");
           return { username, password };
         });
