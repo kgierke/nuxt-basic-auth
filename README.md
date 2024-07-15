@@ -21,21 +21,13 @@ Nuxt 3 Module for Basic Authentication.
 
 ## Quick Setup
 
-1. Add `@kgierke/nuxt-basic-auth` dependency to your project
+Install the module to your Nuxt application with one command:
 
 ```bash
-npx nuxi@latest module add nuxt-basic-auth
+npx nuxi module add @kgierke/nuxt-basic-auth
 ```
 
-2. Add `@kgierke/nuxt-basic-auth` to the `modules` section of `nuxt.config.ts`
-
-```js
-export default defineNuxtConfig({
-  modules: ["@kgierke/nuxt-basic-auth"],
-});
-```
-
-3. Configure the module in `nuxt.config.ts`
+Configure the module in `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
@@ -67,6 +59,8 @@ That's it! You can now use Basic Auth in your Nuxt app ✨
 | `users`          | `array`    | `[]`    | Array of users. Each user must have a `username` and `password` property. Can also be formatted as string `<username>:<password>,<username2>:<password2>` |
 | `usersDelimiter` | `string`   | `,`     | Delimiter for users string.                                                                                                                               |
 | `allowedRoutes`  | `string[]` | `[]`    | Array of routes that are not protected by Basic Auth. Supports regex patterns.                                                                            |
+
+All options can also be set through environment variables, using the `NUXT_BASIC_AUTH_` prefix. For example, `NUXT_BASIC_AUTH_ENABLED=true`.
 
 ## Development
 
