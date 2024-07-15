@@ -37,7 +37,7 @@ export default defineNuxtModule<ModuleOptions>({
      */
     nuxt.options.runtimeConfig.basicAuth = defu(
       nuxt.options.runtimeConfig.basicAuth || {},
-      options
+      options,
     );
 
     /**

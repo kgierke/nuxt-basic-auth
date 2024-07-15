@@ -54,7 +54,7 @@ export default defineEventHandler((event) => {
         });
 
     authenticated = users.some(
-      (user) => user.username === username && user.password === password
+      (user) => user.username === username && user.password === password,
     );
   }
 
@@ -64,7 +64,7 @@ export default defineEventHandler((event) => {
   if (!authenticated) {
     event.node.res.setHeader(
       "WWW-Authenticate",
-      'Basic realm="Secure Area", charset="UTF-8"'
+      'Basic realm="Secure Area", charset="UTF-8"',
     );
     event.node.res.statusCode = 401;
     event.node.res.end("Access denied");

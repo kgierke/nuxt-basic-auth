@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## v1.6.0
 
 [compare changes](https://undefined/undefined/compare/v1.5.0...v1.6.0)
@@ -64,7 +63,7 @@
 
 - Add license (1097524)
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Kurt Gierke ([@kgierke](http://github.com/kgierke))
 
@@ -80,7 +79,7 @@
 
 - Remove console log statement (9f796dc)
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Kurt Gierke ([@kgierke](http://github.com/kgierke))
 
@@ -92,12 +91,11 @@
 
 - Replace glob pattern with regex (2f94a1c)
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Kurt Gierke ([@kgierke](http://github.com/kgierke))
 
 ## v1.1.0
-
 
 ### 🚀 Enhancements
 
@@ -110,7 +108,6 @@
 - Add defu as dependency (1f0c1a6)
 - Add empty test (cdccc80)
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Kurt Gierke ([@kgierke](http://github.com/kgierke))
-
