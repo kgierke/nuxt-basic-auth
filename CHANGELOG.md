@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.7.0
+
+[compare changes](https://undefined/undefined/compare/v1.6.0...v1.7.0)
+
+### 🚀 Enhancements
+
+- Allow disabled state at build time (3adc6ac)
+
+### 📖 Documentation
+
+- Use new `nuxi module add` command in installation (b04bd31)
+
+### 🏡 Chore
+
+- Update dependencies (9669535)
+- Update eslint and add prettier (5c00622)
+- Update readme (fc0a6f2)
+- Update dependencies (f28af8e)
+
+### ❤️ Contributors
+
+- Kurt Gierke ([@kgierke](http://github.com/kgierke))
+- Andrew Nyzhnyk ([@dasph](http://github.com/dasph))
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+
 ## v1.6.0
 
 [compare changes](https://undefined/undefined/compare/v1.5.0...v1.6.0)

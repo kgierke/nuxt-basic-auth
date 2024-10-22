@@ -1,6 +1,6 @@
 {
   "name": "@kgierke/nuxt-basic-auth",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Nuxt 3 Module for Basic Authentication",
   "repository": "your-org/@kgierke/nuxt-basic-auth",
   "license": "MIT",
