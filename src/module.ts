@@ -43,11 +43,9 @@ export default defineNuxtModule<ModuleOptions>({
     /**
      * Add the server middleware to the Nuxt instance
      */
-    if (options.enabled) {
-      addServerHandler({
-        middleware: true,
-        handler: resolve("./runtime/server/middleware/basic-auth"),
-      });
-    }
+    addServerHandler({
+      middleware: true,
+      handler: resolve("./runtime/server/middleware/basic-auth"),
+    });
   },
 });
